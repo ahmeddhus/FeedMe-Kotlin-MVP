@@ -1,5 +1,6 @@
 package com.example.feedme.base
 
+import com.example.feedme.injection.component.DaggerPresenterInjector
 import com.example.feedme.injection.component.PresenterInjector
 import com.example.feedme.injection.component.PresenterInjector.Builder
 import com.example.feedme.injection.module.ContextModule
@@ -8,7 +9,7 @@ import com.example.feedme.ui.post.PostPresenter
 
 abstract class BasePresenter<out V : BaseView>(protected val view: V) {
 
-    private val injector: PresenterInjector = Builder
+    private val injector: PresenterInjector = DaggerPresenterInjector
         .builder()
         .baseView(view)
         .contextModule(ContextModule)

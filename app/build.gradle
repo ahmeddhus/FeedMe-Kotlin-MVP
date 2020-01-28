@@ -39,8 +39,8 @@ dependencies {
 
     //Retrofit 2
     implementation "com.squareup.retrofit2:retrofit:2.6.1"
-    implementation "com.squareup.retrofit2:adapter-rxjava2:2.3.0"
-    implementation "com.squareup.retrofit2:converter-moshi:2.3.0"
+    implementation "com.squareup.retrofit2:adapter-rxjava2:2.4.0"
+    implementation "com.squareup.retrofit2:converter-moshi:2.4.0"
 
     // Dagger 2
     implementation "com.google.dagger:dagger:2.24"
